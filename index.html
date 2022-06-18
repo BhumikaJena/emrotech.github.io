@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend assesment</title>
+</head>
+
+<body class=" bg-[url('bg1.png')]">
+    <div class="flex bg-cyan-400 h-20">
+        <div class="my-4 mx-6 w-1/2">
+            <img src="Asset 1_1 1.png" alt="logo" height="50" width="145">
+        </div>
+        <div class="flex my-4 ml-3.5 mr-0">
+            <h6 class=" ml-60 my-4 font-bold cursor-pointer">Join a race</h6>
+            <h6 class="ml-10 my-4 font-bold cursor-pointer">Userboard</h6>
+            <button class=" bg-white ml-10 mt-4 my-2 px-3 rounded-md font-bold">Login</button>
+        </div>
+    </div>
+    <div id="bodydiv">
+        <div class="flex items-center justify-center flex-col mt-16" id="formdiv">
+            <h2 class=" font-bold text-2xl font-sans mb-4">Password Reset</h2>
+            <form>
+                <label class="font-bold ml-6">NEW PASSWORD</label> <br>
+                <input type="password" name="newpass" id="newpass"
+                    class=" border-2 border-solid border-black block ml-6 w-56"><br>
+                <label class="font-bold ml-6">RE-ENTER NEW PASSWORD</label><br>
+                <input type="password" name="rnewpass" id="rnewpass"
+                    class="border-2 border-solid border-black block ml-6 w-56"><br>
+            </form>
+            <p class=" text-red-500 hidden" id="error">Passwords do not match</p>
+            <p class=" text-red-500 hidden ml-2 mb-2" id="error2">Your password must be at least 8 characters long,
+                contain at least one number and have a mixture of uppercase and lowercase letters.</p>
+            <button class=" bg-black text-white p-3 px-9 w-56 ml-6 rounded-md " id="resbtn">RESET PASSWORD</button>
+        </div>
+    </div>
+    <div class="flex bg-cyan-500 h-15 fixed inset-x-0 bottom-0">
+        <div class="flex my-2 ml-3.5 mr-0">
+            <h6 class=" ml-60 my-4 font-bold text-white cursor-pointer">About Us</h6>
+            <h6 class="ml-10 my-4 font-bold text-white cursor-pointer">Privacy Policy</h6>
+            <h6 class=" ml-10 my-4 font-bold text-white cursor-pointer">Tutorials</h6>
+            <h6 class=" ml-10 my-4 font-bold text-white cursor-pointer">Terms of Service</h6>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
